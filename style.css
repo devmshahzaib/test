@@ -3,3 +3,66 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: whitesmoke;
+    align-items: center;
+}
+.container{
+    display: flex;
+}
+.card{
+    /* height:500px; */
+    margin:50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    max-height: 400px;
+}
+img{
+    height: 100%;
+    width: 350px;
+    border-radius:3px;
+    transition: .3s linear;
+}
+.intro{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom:222px;
+    background: rgb(27,27,27, 5);
+    color: white;
+    transition:2s;
+    overflow: hidden;
+}
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+span{
+    font-weight: bold;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 210px;
+    bottom: 100px;
+    background: black;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
